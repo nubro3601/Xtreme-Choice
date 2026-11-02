@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Xtreme Choice</title>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="store">
+<header class="site"><div class="wrap bar">
+ <a class="logo" href="#">Xtreme<i>Choice</i></a>
+ <nav class="main" id="nav">
+  <a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#offers">Offers</a><a href="#admin">Admin</a>
+ </nav>
+ <div class="tools">
+  <button class="btn" id="cartBtn">Cart (<span id="count">0</span>)</button>
+  <button class="burger" id="burger" aria-label="Menu">Menu</button>
+ </div>
+</div></header>
+
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Electronics, chosen with intent.</h1>
+  <p>Flagship audio, displays and wearables, selected for performance and finished to last.</p>
+  <div class="cta"><a class="btn" href="#shop">Shop the collection</a><a class="btn ghost" href="#offers">View offers</a></div>
+ </div>
+ <div class="stage" aria-hidden="true">
+  <svg viewBox="0 0 400 400"><defs><linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#60A5FA"/><stop offset="1" stop-color="#2563EB"/></linearGradient></defs>
+   <path d="M80 230a120 120 0 0 1 240 0" fill="none" stroke="url(#hg)" stroke-width="26" stroke-linecap="round"/>
+   <rect x="60" y="215" width="60" height="110" rx="26" fill="#0F172A" stroke="#60A5FA" stroke-width="3"/>
+   <rect x="280" y="215" width="60" height="110" rx="26" fill="#0F172A" stroke="#60A5FA" stroke-width="3"/>
+   <rect x="72" y="240" width="14" height="60" rx="7" fill="#2563EB"/><rect x="314" y="240" width="14" height="60" rx="7" fill="#2563EB"/></svg>
+ </div>
+</div></div>
+
+<section id="categories" class="cats"><div class="wrap">
+ <div class="head"><h2>Shop by category</h2></div>
+ <div class="catgrid">
+  <a class="cat" href="#shop"><b>Audio</b><span>Headphones and speakers</span></a>
+  <a class="cat" href="#shop"><b>Wearables</b><span>Watches and trackers</span></a>
+  <a class="cat" href="#shop"><b>Displays</b><span>Monitors and screens</span></a>
+  <a class="cat" href="#shop"><b>Accessories</b><span>Chargers and cases</span></a>
+ </div>
+</div></section>
+
+<section id="shop"><div class="wrap">
+ <div class="head"><h2>New arrivals</h2></div>
+ <div class="grid" id="products"></div>
+</div></section>
+
+<section id="offers" class="promo"><div class="wrap"><div class="box">
+ <div><h2>Free express delivery over $200</h2><p>Applies to every order in the collection.</p></div>
+ <a class="btn" href="#shop">Start shopping</a>
+</div></div></section>
+
+<footer class="site"><div class="wrap">
+ <div class="fgrid">
+  <div><a class="logo" href="#" style="font-size:24px">Xtreme<i>Choice</i></a><p style="color:#94A3B8;max-width:32ch">Premium electronics, delivered with care.</p></div>
+  <div><h4>Shop</h4><a href="#shop">Audio</a><a href="#shop">Wearables</a><a href="#shop">Displays</a></div>
+  <div><h4>Support</h4><a href="#">Shipping</a><a href="#">Returns</a><a href="#">Contact</a></div>
+  <div><h4>Company</h4><a href="#">About</a><a href="#admin">Admin dashboard</a></div>
+ </div>
+ <div class="copy">© 2026 Xtreme Choice. All rights reserved.</div>
+</div></footer>
+</div>
+
+<div class="modal" id="modal"><div class="panel">
+ <h3>Your cart</h3><div id="cartItems"></div>
+ <div class="row"><span>Total</span><b id="total">$0</b></div>
+ <button class="btn" id="checkout">Checkout</button>
+ <button class="btn ghost" id="close" style="background:var(--black);margin-top:10px">Keep shopping</button>
+</div></div>
+
+<div id="admin">
+ <aside class="side">
+  <a class="logo" href="#">Xtreme<i style="font-style:normal;color:var(--light)">Choice</i></a>
+  <a class="on" href="#admin">Dashboard</a><a href="#admin">Orders</a><a href="#admin">Products</a><a href="#admin">Customers</a><a href="#">Back to store</a>
+ </aside>
+ <div class="main">
+  <h1>Dashboard</h1>
+  <div class="stats">
+   <div class="stat"><span>Revenue</span><b>$48,320</b><em>+12.4%</em></div>
+   <div class="stat"><span>Orders</span><b>642</b><em>+8.1%</em></div>
+   <div class="stat"><span>Customers</span><b>1,208</b><em>+5.3%</em></div>
+   <div class="stat"><span>Conversion</span><b>3.6%</b><em>+0.4%</em></div>
+  </div>
+  <div class="charts">
+   <div class="chart"><h3>Sales this year</h3>
+    <svg viewBox="0 0 520 220"><g stroke="#E2E8F0"><path d="M30 20H510M30 70H510M30 120H510M30 170H510"/></g>
+     <path d="M30 160 L75 140 L120 150 L165 110 L210 120 L255 85 L300 95 L345 60 L390 70 L435 40 L480 30 L510 25 L510 170 L30 170Z" fill="rgba(96,165,250,.2)"/>
+     <path d="M30 160 L75 140 L120 150 L165 110 L210 120 L255 85 L300 95 L345 60 L390 70 L435 40 L480 30 L510 25" fill="none" stroke="#2563EB" stroke-width="3" stroke-linejoin="round"/>
+     <g fill="#64748B" font-size="11"><text x="30" y="195">Jan</text><text x="165" y="195">Apr</text><text x="300" y="195">Jul</text><text x="435" y="195">Oct</text></g></svg></div>
+   <div class="chart"><h3>By category</h3>
+    <svg viewBox="0 0 240 220"><g fill="#2563EB"><rect x="20" y="50" width="40" height="120"/></g><rect x="75" y="80" width="40" height="90" fill="#60A5FA"/><rect x="130" y="110" width="40" height="60" fill="#0F172A"/><rect x="185" y="135" width="40" height="35" fill="#080D18"/>
+     <g fill="#64748B" font-size="11"><text x="20" y="195">Audio</text><text x="72" y="195">Wear</text><text x="128" y="195">Disp.</text><text x="182" y="195">Acc.</text></g></svg></div>
+  </div>
+  <div class="tbl"><h3>Recent orders</h3>
+   <table><tr><th>Order</th><th>Customer</th><th>Total</th><th>Status</th></tr>
+    <tr><td>#1042</td><td>Amina R.</td><td>$349</td><td><span class="tag">Shipped</span></td></tr>
+    <tr><td>#1041</td><td>Daniel K.</td><td>$129</td><td><span class="tag">Processing</span></td></tr>
+    <tr><td>#1040</td><td>Sara M.</td><td>$599</td><td><span class="tag">Delivered</span></td></tr></table></div>
+ </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
